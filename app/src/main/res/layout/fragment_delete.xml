@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4BFFFFFF"
+    tools:context=".DeleteFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLANETARY STATISTICS"
+            android:textStyle="bold"
+            android:textSize="25sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/searchET"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:hint="Enter ID for Search"
+                android:inputType="number"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/viewBtn"
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:text="VIew"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/del_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Data"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

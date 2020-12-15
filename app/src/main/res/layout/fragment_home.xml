@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4BFFFFFF"
+    tools:context=".HomeFragment">
+
+
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLANETARY STATISTICS"
+            android:textStyle="bold"
+            android:textSize="25sp">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/showdataBTN"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Data"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Name of Planet"
+            android:inputType="textPersonName"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/distanceET"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Average Distance from Sun"
+            android:inputType="number"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id="@+id/spinET"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Spin on Axis"
+            android:inputType="number"
+            android:layout_margin="10dp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Satellite"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/groups">
+        </Spinner>
+    </LinearLayout>
+    <Button
+        android:id="@+id/insertBTN"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Insert Data"/>
+
+
+</LinearLayout>

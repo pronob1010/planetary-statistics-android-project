@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4BFFFFFF"
+    tools:context=".UpdateFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLANETARY STATISTICS"
+                android:textStyle="bold"
+                android:textSize="25sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Planet ID"
+                android:inputType="number"
+                android:layout_marginBottom="2dp" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STATISTICS"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:textSize="16sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Planet's Name"/>
+
+            <EditText
+                android:id="@+id/distanceET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Planet's distance from sun"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/spinET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Planet's spin"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/satelliteET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Planet's satellite"
+                android:inputType="number"/>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Data"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
